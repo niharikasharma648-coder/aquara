@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AQUORA Insights - Education</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-surface": "#dfe3e7",
+                      "on-background": "#dfe3e7",
+                      "on-surface": "#dfe3e7",
+                      "on-error": "#690005",
+                      "secondary-container": "#00c7a5",
+                      "surface-tint": "#b9c7e4",
+                      "on-tertiary-fixed-variant": "#374767",
+                      "surface-container-lowest": "#0a0f12",
+                      "tertiary-fixed": "#d8e2ff",
+                      "background": "#0f1417",
+                      "on-secondary-fixed": "#002019",
+                      "tertiary": "#b6c6ed",
+                      "surface-variant": "#313539",
+                      "surface-container-highest": "#313539",
+                      "secondary": "#41e4c0",
+                      "outline": "#8f9097",
+                      "on-surface-variant": "#c5c6cd",
+                      "on-tertiary-container": "#7282a5",
+                      "primary-container": "#0a192f",
+                      "surface-container": "#1b2023",
+                      "tertiary-fixed-dim": "#b6c6ed",
+                      "tertiary-container": "#061836",
+                      "secondary-fixed-dim": "#38debb",
+                      "on-error-container": "#ffdad6",
+                      "on-primary-container": "#74829d",
+                      "on-primary-fixed": "#0d1c32",
+                      "surface-container-low": "#171c1f",
+                      "on-primary-fixed-variant": "#39475f",
+                      "error-container": "#93000a",
+                      "on-primary": "#233148",
+                      "outline-variant": "#44474d",
+                      "on-secondary-fixed-variant": "#005142",
+                      "surface": "#0f1417",
+                      "on-secondary": "#00382d",
+                      "on-tertiary-fixed": "#091b39",
+                      "inverse-on-surface": "#2c3134",
+                      "surface-dim": "#0f1417",
+                      "error": "#ffb4ab",
+                      "on-secondary-container": "#004d3f",
+                      "primary-fixed": "#d6e3ff",
+                      "inverse-primary": "#515f78",
+                      "surface-container-high": "#262b2e",
+                      "primary": "#b9c7e4",
+                      "on-tertiary": "#20304f",
+                      "surface-bright": "#353a3d",
+                      "secondary-fixed": "#5ffbd6",
+                      "primary-fixed-dim": "#b9c7e4"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-desktop": "64px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Manrope"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Manrope"
+                      ],
+                      "display-lg": [
+                              "Manrope"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Manrope"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "72px",
+                              {
+                                      "lineHeight": "80px",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .glass-card {
+            background: rgba(17, 34, 64, 0.7);
+            backdrop-filter: blur(32px);
+            -webkit-backdrop-filter: blur(32px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar (Shared Component) -->
+<header class="fixed top-0 w-full z-50 bg-surface/70 dark:bg-surface/70 backdrop-blur-xl border-b border-white/5 shadow-sm">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto hidden md:flex">
+<div class="font-headline-md text-headline-md tracking-tighter text-on-surface dark:text-on-surface">AQUORA</div>
+<nav class="flex gap-8">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps hover:opacity-80 transition-opacity" href="#">Science</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps hover:opacity-80 transition-opacity" href="#">Tracking</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps hover:opacity-80 transition-opacity" href="#">Community</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps hover:opacity-80 transition-opacity" href="#">Shop</a>
+</nav>
+<button class="bg-secondary text-primary-container font-bold rounded-full px-6 py-3 font-label-caps text-label-caps hover:shadow-[0_0_15px_rgba(100,255,218,0.5)] transform hover:-translate-y-0.5 transition-all duration-200">Calculate My Intake</button>
+</div>
+<!-- Mobile Nav Placeholder (Suppressed Nav row text links on mobile as per logic) -->
+<div class="flex justify-between items-center px-margin-mobile py-4 md:hidden">
+<div class="font-headline-md text-headline-md tracking-tighter text-on-surface">AQUORA</div>
+<button class="bg-secondary text-primary-container font-bold rounded-full px-4 py-2 font-label-caps text-label-caps text-xs">Menu</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Header Section -->
+<section class="mb-16 md:mb-24 text-center max-w-3xl mx-auto">
+<h1 class="font-display-lg text-display-lg md:text-display-lg text-headline-lg-mobile font-headline-lg-mobile text-on-background mb-4">AQUORA Insights</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Simple nutrition knowledge for better everyday hydration.</p>
+</section>
+<!-- Bento Grid Layout for Articles -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Article 1: Large Featured Card -->
+<article class="glass-card rounded-xl overflow-hidden md:col-span-8 flex flex-col group cursor-pointer hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-all duration-300">
+<div class="h-64 md:h-80 w-full relative overflow-hidden bg-primary-container">
+<img alt="Abstract water visualization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 mix-blend-screen" data-alt="A striking digital installation art piece featuring glowing, generative abstract liquid patterns in deep sea blues and vibrant aquas, representing hydration and purity. The lighting is ethereal and soft, reflecting off glassmorphic surfaces. The aesthetic is highly scientific yet calming and modern minimalist." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArbdwUAqPVXTnJjLcvtd4hQ5oSDIPHoNKDhAZE2lPUjmalogaZyOQH07zvNAhG3Nfe2DgoxL6pgWBDk-4GvEgF1nf7zbmqlriUYv_25PtOFb6QTbk7TbVucvTH5qAadBbHM6jv-Okee6Ri-DPWcRIzxFQcyLWJx187AYcA_9projT0YZx0jm5SEQX0sFHC1Ng1BxmJzAykc-38mDMSe5dxtscINlehM6A9N0z68CTCbbkUXeNi_mY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A192F] to-transparent"></div>
+</div>
+<div class="p-8 md:p-10 flex-grow flex flex-col justify-end -mt-20 relative z-10">
+<div class="font-label-caps text-label-caps text-secondary mb-3 uppercase tracking-widest">Hydration Basics</div>
+<h2 class="font-headline-lg text-headline-lg md:text-headline-lg text-headline-lg-mobile font-headline-lg-mobile text-on-background mb-4 group-hover:text-secondary transition-colors">How much water should you actually drink?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">Beyond the traditional 8 glasses a day, discover the precise scientific formulation for your unique physiology and lifestyle.</p>
+<div class="flex items-center text-secondary font-label-caps text-label-caps">
+<span>Read Article</span>
+<span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Article 2: Tall Side Card -->
+<article class="glass-card rounded-xl overflow-hidden md:col-span-4 flex flex-col group cursor-pointer hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-all duration-300">
+<div class="h-48 md:h-64 w-full relative overflow-hidden bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700 opacity-70 mix-blend-screen" data-alt="A macro photography shot of condensation and water droplets on clear glass against a deep navy background. The lighting catches the droplets, creating tiny prisms of cyan and white light. The image embodies clinical precision, high-science, and refreshing purity." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAnLy0_8_uPsXOE_OksZyIAUiVmjiEnVcPBEDkJh4jmlQVU9t1R4rfxdlEmsbOy7_yfV2hpU2bM8hmmbtMcCtk-mBMbC4uSf8MGZMPl-xGDPkjiRcRd3lRI4x6qkKCFzG8fJPgwqlQSD4GFqjpu3pjTua7s5aIGmLRP4KcttGSajIuRqx_COppDGdsncvFZTmXvHp0ocwIM6HjQL8B7KV4wr7OjyYVWKVVmAXHtxw9qkpuZ06mJpzk')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A192F] to-transparent"></div>
+</div>
+<div class="p-6 md:p-8 flex-grow flex flex-col justify-end -mt-16 relative z-10">
+<div class="font-label-caps text-label-caps text-secondary mb-3 uppercase tracking-widest">Wellness</div>
+<h2 class="font-headline-md text-headline-md text-on-background mb-4 group-hover:text-secondary transition-colors">5 signs you may not be drinking enough water.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Learn to decode your body's subtle signals before mild dehydration affects your cognitive and physical performance.</p>
+<div class="flex items-center text-secondary font-label-caps text-label-caps mt-auto">
+<span>Read Article</span>
+<span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Article 3: Medium Card -->
+<article class="glass-card rounded-xl overflow-hidden md:col-span-6 flex flex-col group cursor-pointer hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-all duration-300">
+<div class="p-8 md:p-10 flex flex-col h-full relative">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary opacity-10 blur-3xl rounded-full"></div>
+<div class="font-label-caps text-label-caps text-secondary mb-3 uppercase tracking-widest">Performance</div>
+<h2 class="font-headline-md text-headline-md text-on-background mb-4 group-hover:text-secondary transition-colors">Does exercise change your hydration needs?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">Understanding sweat rate, thermal regulation, and how to calibrate your fluid intake for peak athletic exertion.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center text-secondary font-label-caps text-label-caps">
+<span>Read Article</span>
+<span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</div>
+<div class="h-12 w-12 rounded-full border border-white/10 flex items-center justify-center bg-surface-container/50 text-secondary">
+<span class="material-symbols-outlined">directions_run</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Article 4: Medium Card with Image -->
+<article class="glass-card rounded-xl overflow-hidden md:col-span-6 flex flex-col group cursor-pointer hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-all duration-300 relative">
+<div class="absolute inset-0 z-0">
+<img alt="Molecular structure visualization" class="w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-500" data-alt="A minimalist 3D rendering of abstract geometric shapes resembling molecular structures or cellular hydration. The scene uses a monochromatic deep navy blue palette with glowing cyan and bright teal accents. The aesthetic is clean, clinical, and evocative of advanced nutritional science." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoD_KTQMHybSRJrFKJE27_xWACQsDnS2qWfQ6U4TU1eUnMlL-31zCcfDVo_OZc8UP_NC1TOL8h-5R7K3HjI6SCzw6lYhkR9RmlcpJfkkfnK1nwPhf3XTxOlErNF8tmj52ipbhhQViVECrXIHlVXNm4ejQydCOXEDgLsoE4yJFH41TPk-t8otE_Ctrl8cAx_311lHvVheHLxwHfcJEN5IUYcpsV8BuBC35FXgrXGY55EzyOLiBNAQ8"/>
+</div>
+<div class="p-8 md:p-10 flex flex-col h-full relative z-10 bg-gradient-to-br from-[#0A192F]/80 to-transparent">
+<div class="font-label-caps text-label-caps text-secondary mb-3 uppercase tracking-widest">Nutrition Science</div>
+<h2 class="font-headline-md text-headline-md text-on-background mb-4 group-hover:text-secondary transition-colors">Water, electrolytes &amp; hydration.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">Why plain water isn't always enough. Delve into the critical role of sodium, potassium, and magnesium in cellular fluid balance.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-center text-secondary font-label-caps text-label-caps">
+<span>Read Article</span>
+<span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</div>
+<div class="h-12 w-12 rounded-full border border-white/10 flex items-center justify-center bg-surface-container/50 text-secondary">
+<span class="material-symbols-outlined">science</span>
+</div>
+</div>
+</div>
+</article>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-20 bg-surface-container-lowest dark:bg-surface-container-lowest flat no shadows">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-gutter">
+<div>
+<div class="font-headline-md text-headline-md text-on-surface mb-4">AQUORA</div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 AQUORA. Precision Hydration.</p>
+</div>
+<nav class="flex flex-col md:flex-row gap-4 md:gap-8 mt-8 md:mt-0">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Scientific Method</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact Us</a>
+</nav>
+</div>
+</footer>
+</body></html>

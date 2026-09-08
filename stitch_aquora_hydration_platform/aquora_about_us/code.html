@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AQUORA - About</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#dfe3e7",
+                        "on-background": "#dfe3e7",
+                        "on-surface": "#dfe3e7",
+                        "on-error": "#690005",
+                        "secondary-container": "#00c7a5",
+                        "surface-tint": "#b9c7e4",
+                        "on-tertiary-fixed-variant": "#374767",
+                        "surface-container-lowest": "#0a0f12",
+                        "tertiary-fixed": "#d8e2ff",
+                        "background": "#0f1417",
+                        "on-secondary-fixed": "#002019",
+                        "tertiary": "#b6c6ed",
+                        "surface-variant": "#313539",
+                        "surface-container-highest": "#313539",
+                        "secondary": "#41e4c0",
+                        "outline": "#8f9097",
+                        "on-surface-variant": "#c5c6cd",
+                        "on-tertiary-container": "#7282a5",
+                        "primary-container": "#0a192f",
+                        "surface-container": "#1b2023",
+                        "tertiary-fixed-dim": "#b6c6ed",
+                        "tertiary-container": "#061836",
+                        "secondary-fixed-dim": "#38debb",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-container": "#74829d",
+                        "on-primary-fixed": "#0d1c32",
+                        "surface-container-low": "#171c1f",
+                        "on-primary-fixed-variant": "#39475f",
+                        "error-container": "#93000a",
+                        "on-primary": "#233148",
+                        "outline-variant": "#44474d",
+                        "on-secondary-fixed-variant": "#005142",
+                        "surface": "#0f1417",
+                        "on-secondary": "#00382d",
+                        "on-tertiary-fixed": "#091b39",
+                        "inverse-on-surface": "#2c3134",
+                        "surface-dim": "#0f1417",
+                        "error": "#ffb4ab",
+                        "on-secondary-container": "#004d3f",
+                        "primary-fixed": "#d6e3ff",
+                        "inverse-primary": "#515f78",
+                        "surface-container-high": "#262b2e",
+                        "primary": "#b9c7e4",
+                        "on-tertiary": "#20304f",
+                        "surface-bright": "#353a3d",
+                        "secondary-fixed": "#5ffbd6",
+                        "primary-fixed-dim": "#b9c7e4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Manrope"],
+                        "label-caps": ["Inter"],
+                        "headline-md": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(17, 34, 64, 0.7);
+            backdrop-filter: blur(32px);
+            -webkit-backdrop-filter: blur(32px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col pt-[88px]">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 dark:bg-surface/70 backdrop-blur-xl border-b border-white/5 shadow-sm">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto hidden md:flex">
+<div class="font-headline-md text-headline-md tracking-tighter text-on-surface dark:text-on-surface">AQUORA</div>
+<div class="flex items-center gap-gutter">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80 transition-opacity" href="#">Science</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80 transition-opacity" href="#">Tracking</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80 transition-opacity" href="#">Community</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80 transition-opacity" href="#">Shop</a>
+</div>
+<button class="bg-[#64FFDA] text-primary-container font-bold px-6 py-3 rounded-full hover:shadow-[0_0_20px_rgba(100,255,218,0.4)] hover:-translate-y-[2px] transition-all duration-300">
+                Calculate My Intake
+            </button>
+</div>
+<!-- Mobile Nav Placeholder -->
+<div class="flex md:hidden justify-between items-center px-margin-mobile py-4 w-full">
+<div class="font-headline-md text-headline-md tracking-tighter text-on-surface dark:text-on-surface">AQUORA</div>
+<span class="material-symbols-outlined text-on-surface text-2xl" data-icon="menu">menu</span>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center bg-primary-container overflow-hidden rounded-b-[48px]">
+<div class="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-secondary/40 via-primary-container to-primary-container pointer-events-none"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 w-full py-20">
+<div class="max-w-3xl">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-8 text-glow">Better hydration starts with understanding your body.</h1>
+<p class="font-body-lg text-body-lg text-primary max-w-2xl">At AQUORA, we bridge the gap between high-science and daily wellness. Our mission is to make hydration personal, precise, and effortlessly integrated into your life.</p>
+</div>
+</div>
+</section>
+<!-- Features Bento Grid -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-32">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Card 1 -->
+<div class="glass-card rounded-3xl p-10 flex flex-col h-full transform hover:-translate-y-2 transition-transform duration-300">
+<div class="mb-6 h-12 w-12 rounded-full bg-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="science" style="font-variation-settings: 'FILL' 1;">science</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Personalized Recommendations</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Generic advice doesn't work. We analyze your unique physiological data to create a hydration strategy tailored specifically to you.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-card rounded-3xl p-10 flex flex-col h-full transform hover:-translate-y-2 transition-transform duration-300 md:translate-y-12">
+<div class="mb-6 h-12 w-12 rounded-full bg-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="data_usage" style="font-variation-settings: 'FILL' 1;">data_usage</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Science-informed Guidance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Every recommendation is backed by peer-reviewed research and validated by our team of expert nutritionists and physiologists.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-card rounded-3xl p-10 flex flex-col h-full transform hover:-translate-y-2 transition-transform duration-300">
+<div class="mb-6 h-12 w-12 rounded-full bg-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="water_drop" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Simple</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Complex science translated into elegant, intuitive tools. Hydration tracking shouldn't feel like a chore.</p>
+</div>
+<!-- Card 4 -->
+<div class="glass-card rounded-3xl p-10 flex flex-col h-full transform hover:-translate-y-2 transition-transform duration-300 md:translate-y-12">
+<div class="mb-6 h-12 w-12 rounded-full bg-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="directions_run" style="font-variation-settings: 'FILL' 1;">directions_run</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-on-surface">Actionable</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Clear steps and timely nudges ensure you meet your hydration goals, optimizing your energy and recovery throughout the day.</p>
+</div>
+</div>
+</section>
+<!-- Nutrition Team Section -->
+<section class="bg-surface-container-low py-32 rounded-t-[48px]">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-16 md:flex justify-between items-end">
+<div class="max-w-2xl">
+<h2 class="font-headline-lg md:font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface mb-6">Guided by nutrition professionals</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Our protocols are developed by leading experts in sports nutrition and human physiology.</p>
+</div>
+<button class="mt-8 md:mt-0 px-8 py-4 border border-secondary text-on-surface rounded-full hover:bg-secondary/10 transition-colors flex items-center gap-2">
+<span class="font-label-caps text-label-caps">Meet the AQUORA Nutrition Team</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Profile 1 -->
+<div class="glass-card rounded-3xl overflow-hidden group">
+<div class="h-64 bg-[#112240] relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500 mix-blend-luminosity" data-alt="A professional headshot of a female nutritionist in a modern, bright clinical setting. High-science aesthetic with subtle blue lighting. She is wearing a dark navy scrub top. The mood is expert, approachable, and calm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrW1v0cwjkcXGUAp2x-VfcT5wm6gP-eCZ0t4hQZlo6IwdAF2kWQItRlkydD0Q_p2el1Wq23iY1Av0c_-F-y2HyMmPHHzNmfvwD9L0ycUnicXAdH6xGi5Vr2KDXpYVToWyzC0PcHxeIBSzmWuxPJ-cQbolLxHTaUpusrdy0lf-Vi4no96wWYhziuOhLLl8Z7Q6ThTVr_8TJ4Xa_Qlk-AwsqGGTPyQIZPDSbKvW-OZiNjMfHS0UYIRY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0a192f] to-transparent"></div>
+</div>
+<div class="p-8">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Dr. Maya Sharma</h4>
+<p class="font-label-caps text-label-caps text-secondary mb-4">Lead Physiologist</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Specializing in cellular hydration and endurance performance optimization.</p>
+</div>
+</div>
+<!-- Profile 2 -->
+<div class="glass-card rounded-3xl overflow-hidden group">
+<div class="h-64 bg-[#112240] relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500 mix-blend-luminosity" data-alt="A professional headshot of a male sports nutritionist in a sleek, minimalist laboratory environment. High-science aesthetic with deep navy background and soft aqua accents. The mood is precise, authoritative, and modern." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVbQBsDRCt9hdknDptoFX5r03OkHs7n2odMDfBb1ysiT1Ez3GJX9ZfjCvQ2MHGKrn8nw4RfGkF6cbngh9MylWH4JJ-O2U0_4QhUNeEdHk6GmpAyHfGCmfGkRX9Vqi9ZVZFUWblelB164XmghFFhenGFwhNZuukg5gCp7-Vx5BUne7boDPAo4d4rzv9ihLRUo1HUz0ku5B8ouEkxMbzPDB3h2zy-_UGlSSVyxNOOAgPcTnxp2C3NFM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0a192f] to-transparent"></div>
+</div>
+<div class="p-8">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">James Vance, MS</h4>
+<p class="font-label-caps text-label-caps text-secondary mb-4">Sports Nutritionist</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Expert in translating complex biometric data into actionable hydration strategies.</p>
+</div>
+</div>
+<!-- Profile 3 -->
+<div class="glass-card rounded-3xl overflow-hidden group">
+<div class="h-64 bg-[#112240] relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500 mix-blend-luminosity" data-alt="A professional headshot of a female clinical researcher in a high-tech wellness facility. Modern minimalist aesthetic featuring glass partitions and cool-toned lighting. She exudes confidence and calm expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj6FTHEvOnuQ8fq6xTmkucVZ7pVmfPr6fZvM38kGLrkKI_A7C0eV4PAfV7swhQwZ4NEkeVKb2eY2w2HOlnCvufOL7XDrNZPNy5zw5dCwq_nlOEZrj84CtViCTcqKd8A8J44eS26BXVr2zCqmMgaPlqK5nCoR3Ybf8PepGmkbRKJfaZmvjdUPH0kbMJtH64OeTW3OJgCpohOkfgfn2TQn-ZZnmR5qb10DWYxQPYrKEocW0KZgA2lds"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0a192f] to-transparent"></div>
+</div>
+<div class="p-8">
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Dr. Elena Rostova</h4>
+<p class="font-label-caps text-label-caps text-secondary mb-4">Clinical Researcher</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Driving AQUORA's scientific method and overseeing clinical efficacy studies.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 bg-surface-container-lowest dark:bg-surface-container-lowest flat no shadows">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-desktop max-w-container-max mx-auto gap-gutter">
+<div>
+<div class="font-headline-md text-headline-md text-on-surface mb-4">AQUORA</div>
+<div class="font-body-md text-body-md text-primary dark:text-primary-fixed">© 2024 AQUORA. Precision Hydration.</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Scientific Method</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+</body></html>

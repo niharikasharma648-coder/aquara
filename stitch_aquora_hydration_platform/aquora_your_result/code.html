@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AQUORA - Hydration Target</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#dfe3e7",
+                        "on-background": "#dfe3e7",
+                        "on-surface": "#dfe3e7",
+                        "on-error": "#690005",
+                        "secondary-container": "#00c7a5",
+                        "surface-tint": "#b9c7e4",
+                        "on-tertiary-fixed-variant": "#374767",
+                        "surface-container-lowest": "#0a0f12",
+                        "tertiary-fixed": "#d8e2ff",
+                        "background": "#0f1417",
+                        "on-secondary-fixed": "#002019",
+                        "tertiary": "#b6c6ed",
+                        "surface-variant": "#313539",
+                        "surface-container-highest": "#313539",
+                        "secondary": "#41e4c0",
+                        "outline": "#8f9097",
+                        "on-surface-variant": "#c5c6cd",
+                        "on-tertiary-container": "#7282a5",
+                        "primary-container": "#0a192f",
+                        "surface-container": "#1b2023",
+                        "tertiary-fixed-dim": "#b6c6ed",
+                        "tertiary-container": "#061836",
+                        "secondary-fixed-dim": "#38debb",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-container": "#74829d",
+                        "on-primary-fixed": "#0d1c32",
+                        "surface-container-low": "#171c1f",
+                        "on-primary-fixed-variant": "#39475f",
+                        "error-container": "#93000a",
+                        "on-primary": "#233148",
+                        "outline-variant": "#44474d",
+                        "on-secondary-fixed-variant": "#005142",
+                        "surface": "#0f1417",
+                        "on-secondary": "#00382d",
+                        "on-tertiary-fixed": "#091b39",
+                        "inverse-on-surface": "#2c3134",
+                        "surface-dim": "#0f1417",
+                        "error": "#ffb4ab",
+                        "on-secondary-container": "#004d3f",
+                        "primary-fixed": "#d6e3ff",
+                        "inverse-primary": "#515f78",
+                        "surface-container-high": "#262b2e",
+                        "primary": "#b9c7e4",
+                        "on-tertiary": "#20304f",
+                        "surface-bright": "#353a3d",
+                        "secondary-fixed": "#5ffbd6",
+                        "primary-fixed-dim": "#b9c7e4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Manrope"],
+                        "label-caps": ["Inter"],
+                        "headline-md": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .glass-card {
+            background: rgba(17, 34, 64, 0.7);
+            backdrop-filter: blur(32px);
+            -webkit-backdrop-filter: blur(32px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .liquid-bg {
+            background: linear-gradient(180deg, #0A192F 0%, #112240 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased liquid-bg min-h-screen">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 dark:bg-surface/70 backdrop-blur-xl border-b border-white/5 shadow-sm">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md tracking-tighter text-on-surface dark:text-on-surface font-extrabold">AQUORA</div>
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80" href="#">Science</a>
+<a class="font-label-caps text-label-caps text-secondary font-bold border-b-2 border-secondary pb-1 hover:opacity-80 transition-opacity" href="#">Tracking</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80" href="#">Community</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors hover:opacity-80" href="#">Shop</a>
+</div>
+<button class="hidden md:inline-block bg-[#64FFDA] text-[#0A192F] font-bold font-label-caps text-label-caps px-6 py-3 rounded-full hover:shadow-[0_0_15px_rgba(100,255,218,0.5)] hover:-translate-y-[2px] transition-all">
+                Calculate My Intake
+            </button>
+<span class="material-symbols-outlined md:hidden cursor-pointer" data-icon="menu">menu</span>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-[120px] pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">Your daily hydration target</h1>
+<div class="font-display-lg text-display-lg text-secondary mb-2">2.8 L</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Recommended daily water intake, ≈ 9–11 glasses per day.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-16">
+<!-- Central Tank -->
+<div class="md:col-span-5 glass-card rounded-xl p-8 flex flex-col items-center justify-end relative h-[400px] overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-50 flex items-end">
+<div class="w-full bg-gradient-to-t from-secondary to-[#64FFDA] h-[80%] opacity-20 rounded-b-xl" style="mask-image: linear-gradient(to top, black, transparent);"></div>
+</div>
+<div class="z-10 text-center mb-4">
+<span class="material-symbols-outlined text-secondary text-5xl mb-2" data-icon="water_drop">water_drop</span>
+<p class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Your personalized target</p>
+</div>
+</div>
+<!-- Breakdown -->
+<div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+<div class="glass-card rounded-xl p-6 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Morning</span>
+<span class="material-symbols-outlined text-secondary" data-icon="routine">routine</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface">0.7 L</div>
+<div class="w-full h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[70%]"></div>
+</div>
+</div>
+<div class="glass-card rounded-xl p-6 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Afternoon</span>
+<span class="material-symbols-outlined text-secondary" data-icon="light_mode">light_mode</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface">1.0 L</div>
+<div class="w-full h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-full"></div>
+</div>
+</div>
+<div class="glass-card rounded-xl p-6 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Evening</span>
+<span class="material-symbols-outlined text-secondary" data-icon="dark_mode">dark_mode</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface">0.8 L</div>
+<div class="w-full h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[80%]"></div>
+</div>
+</div>
+<div class="glass-card rounded-xl p-6 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant">Exercise / Activity</span>
+<span class="material-symbols-outlined text-secondary" data-icon="directions_run">directions_run</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface">0.3 L</div>
+<div class="w-full h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[30%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Nutritionist Note -->
+<div class="glass-card rounded-xl p-8 mb-16 max-w-4xl mx-auto flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-shrink-0">
+<img class="w-24 h-24 rounded-full object-cover border-2 border-secondary/50" data-alt="A portrait of a confident nutritionist in a clean, modern lab setting. The lighting is soft and high-key white, reflecting the bright, modern light-mode aesthetic of the AQUORA brand. The subject wears professional attire with subtle deep black and pristine white accents. The mood is expert, serene, and trustworthy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRQwLaVRheIa7jidCs0jdfBelorsaxx2hmbnbfiprFY8v0qJu-hXPiLcd3Tz7QRVF0MmKYdrdasHG4sG5Jummxhn5k1w0ffq3PWtV-92Mv6e2WtLXIY0QL_O37bT05Ya_bAEJR5J1WuhGVZrxRCoVmBSTqNW8WVrqnZ9k0csUtASvvPKTFlp7VgT-sHc94KDqscLDPH1A-4G0GRAHRwqUwdBUleU54I8kH0u4K5fKz8Bq4yZT-UHw"/>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">A note from our nutritionists</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                    To optimize absorption, aim to spread your intake evenly throughout the day rather than chugging large amounts at once. Start with a glass upon waking to kickstart your metabolism.
+                </p>
+<div class="font-label-caps text-label-caps text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="verified">verified</span>
+                    Reviewed by AQUORA Nutrition Team
+                </div>
+</div>
+</div>
+<div class="text-center">
+<button class="bg-[#64FFDA] text-[#0A192F] font-bold font-label-caps text-label-caps px-8 py-4 rounded-full hover:shadow-[0_0_20px_rgba(100,255,218,0.5)] hover:-translate-y-[2px] transition-all">
+                View Hydration Plan
+            </button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 bg-surface-container-lowest dark:bg-surface-container-lowest">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-gutter">
+<div>
+<div class="font-headline-md text-headline-md text-on-surface font-extrabold mb-4">AQUORA</div>
+<p class="font-body-md text-body-md text-primary dark:text-primary-fixed">© 2024 AQUORA. Precision Hydration.</p>
+</div>
+<div class="flex flex-col gap-4 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Scientific Method</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+</body></html>

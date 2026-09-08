@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AQUORA - User Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#dfe3e7",
+                    "on-background": "#dfe3e7",
+                    "on-surface": "#dfe3e7",
+                    "on-error": "#690005",
+                    "secondary-container": "#00c7a5",
+                    "surface-tint": "#b9c7e4",
+                    "on-tertiary-fixed-variant": "#374767",
+                    "surface-container-lowest": "#0a0f12",
+                    "tertiary-fixed": "#d8e2ff",
+                    "background": "#0f1417",
+                    "on-secondary-fixed": "#002019",
+                    "tertiary": "#b6c6ed",
+                    "surface-variant": "#313539",
+                    "surface-container-highest": "#313539",
+                    "secondary": "#41e4c0",
+                    "outline": "#8f9097",
+                    "on-surface-variant": "#c5c6cd",
+                    "on-tertiary-container": "#7282a5",
+                    "primary-container": "#0a192f",
+                    "surface-container": "#1b2023",
+                    "tertiary-fixed-dim": "#b6c6ed",
+                    "tertiary-container": "#061836",
+                    "secondary-fixed-dim": "#38debb",
+                    "on-error-container": "#ffdad6",
+                    "on-primary-container": "#74829d",
+                    "on-primary-fixed": "#0d1c32",
+                    "surface-container-low": "#171c1f",
+                    "on-primary-fixed-variant": "#39475f",
+                    "error-container": "#93000a",
+                    "on-primary": "#233148",
+                    "outline-variant": "#44474d",
+                    "on-secondary-fixed-variant": "#005142",
+                    "surface": "#0f1417",
+                    "on-secondary": "#00382d",
+                    "on-tertiary-fixed": "#091b39",
+                    "inverse-on-surface": "#2c3134",
+                    "surface-dim": "#0f1417",
+                    "error": "#ffb4ab",
+                    "on-secondary-container": "#004d3f",
+                    "primary-fixed": "#d6e3ff",
+                    "inverse-primary": "#515f78",
+                    "surface-container-high": "#262b2e",
+                    "primary": "#b9c7e4",
+                    "on-tertiary": "#20304f",
+                    "surface-bright": "#353a3d",
+                    "secondary-fixed": "#5ffbd6",
+                    "primary-fixed-dim": "#b9c7e4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-lg": [
+                            "Manrope"
+                    ],
+                    "label-caps": [
+                            "Inter"
+                    ],
+                    "headline-md": [
+                            "Manrope"
+                    ],
+                    "display-lg": [
+                            "Manrope"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "headline-lg-mobile": [
+                            "Manrope"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ]
+            },
+            "fontSize": {
+                    "headline-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-caps": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display-lg": [
+                            "72px",
+                            {
+                                    "lineHeight": "80px",
+                                    "letterSpacing": "-0.04em",
+                                    "fontWeight": "800"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(17, 34, 64, 0.7);
+            backdrop-filter: blur(32px);
+            -webkit-backdrop-filter: blur(32px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 dark:bg-surface/70 backdrop-blur-xl border-b border-white/5 shadow-sm">
+<div class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto hidden md:flex">
+<div class="font-headline-md text-headline-md tracking-tighter text-on-surface dark:text-on-surface">AQUORA</div>
+<div class="flex gap-8 items-center font-label-caps text-label-caps">
+<a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Science</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Tracking</a>
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1" href="#">Community</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Shop</a>
+</div>
+<button class="bg-[#64FFDA] text-primary-container font-bold rounded-full px-6 py-3 text-label-caps hover:shadow-[0_0_15px_rgba(100,255,218,0.5)] hover:-translate-y-0.5 transition-all">Calculate My Intake</button>
+</div>
+<!-- Mobile Nav Fallback -->
+<div class="md:hidden flex justify-between items-center px-margin-mobile py-4">
+<div class="font-headline-lg-mobile text-headline-lg-mobile tracking-tighter text-on-surface">AQUORA</div>
+<span class="material-symbols-outlined text-on-surface text-3xl">menu</span>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<header class="mb-16 md:mb-24 text-center md:text-left">
+<h1 class="font-display-lg text-display-lg text-on-background mb-4">Your AQUORA profile</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Manage your hydration metrics and personal data.</p>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Profile Column -->
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<!-- Avatar Section -->
+<div class="glass-card rounded-xl p-8 flex flex-col items-center text-center">
+<div class="relative mb-6">
+<img class="w-32 h-32 rounded-full object-cover border-2 border-secondary p-1" data-alt="A futuristic, high-tech stylized portrait avatar of a person, glowing with subtle cyan and deep navy ambient light. The aesthetic is clean, minimalist, and sci-fi inspired, fitting a premium health app. Soft glassmorphic light leaks around the edges." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHi3C3lwR8mb1zj_4udVPDIa_t9wLEpANVHi2wvX9jV3jDTtxk8Ag6QTPzc97usrSbpiM_9h8sLe4UCjpHZ8is0h5YOE7sZFuNF0U4Oxg5JSHeN1gl3Wiqf3M59FuiPTE3zVkmZS6F-hBxu3obTD-484miXF3NNOGXVK7s7HObyHCZHMMGeml2Qm53vLgSmeIinTJPxkIIHTZ3r-VPQPxAJvcwfqm9O179p485hOzTHG-pwItiDC0"/>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-background mb-2">Alex Morgan</h2>
+<p class="font-body-md text-body-md text-secondary mb-6 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">water_drop</span>
+                        Hydration journey · 24 days
+                    </p>
+<button class="w-full border border-[#64FFDA] text-[#64FFDA] rounded-full py-3 font-label-caps text-label-caps hover:bg-[#64FFDA]/10 transition-colors">Edit Profile</button>
+</div>
+<!-- Personal Info -->
+<div class="glass-card rounded-xl p-8">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant mb-6 uppercase tracking-widest">Biological Metrics</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center border-b border-white/5 pb-4">
+<span class="font-body-md text-body-md text-on-surface-variant">Weight</span>
+<span class="font-headline-md text-headline-md text-on-background" style="font-size: 24px; line-height: 32px;">72 <span class="text-sm text-on-surface-variant">kg</span></span>
+</div>
+<div class="flex justify-between items-center border-b border-white/5 pb-4">
+<span class="font-body-md text-body-md text-on-surface-variant">Height</span>
+<span class="font-headline-md text-headline-md text-on-background" style="font-size: 24px; line-height: 32px;">178 <span class="text-sm text-on-surface-variant">cm</span></span>
+</div>
+<div class="flex justify-between items-center pb-2">
+<span class="font-body-md text-body-md text-on-surface-variant">Activity Level</span>
+<span class="font-body-md text-body-md text-secondary">Moderate</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Dashboard Column -->
+<div class="md:col-span-8 flex flex-col gap-gutter">
+<!-- Stats Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-gutter">
+<div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-4">Average Daily Intake</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-background">2.6</span>
+<span class="font-body-md text-body-md text-secondary">L</span>
+</div>
+</div>
+<div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-4">Daily Goal</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-background">2.8</span>
+<span class="font-body-md text-body-md text-on-surface-variant">L</span>
+</div>
+</div>
+<div class="glass-card rounded-xl p-6 flex flex-col justify-between relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent pointer-events-none"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-4">Goal Completion</span>
+<div class="flex items-baseline gap-2 text-glow">
+<span class="font-headline-lg text-headline-lg text-secondary">93%</span>
+</div>
+</div>
+</div>
+<!-- Chart Section -->
+<div class="glass-card rounded-xl p-8 flex-grow flex flex-col">
+<div class="flex justify-between items-center mb-8">
+<h3 class="font-headline-md text-headline-md text-on-background" style="font-size: 24px; line-height: 32px;">Weekly Hydration</h3>
+<div class="flex gap-4">
+<span class="font-label-caps text-label-caps text-secondary bg-secondary/10 px-3 py-1 rounded-full">7 Days</span>
+</div>
+</div>
+<!-- Simplified Visual Chart -->
+<div class="relative flex-grow flex items-end justify-between px-4 pb-8 pt-12 min-h-[250px]">
+<!-- Background Grid Lines -->
+<div class="absolute inset-0 flex flex-col justify-between pointer-events-none px-4 pb-8 pt-12">
+<div class="w-full border-t border-white/5 h-0"></div>
+<div class="w-full border-t border-white/5 h-0"></div>
+<div class="w-full border-t border-white/5 h-0"></div>
+</div>
+<!-- Bars -->
+<div class="relative w-8 bg-[#112240] rounded-t-full h-[60%] border border-white/5 group">
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-[#64FFDA]/50 to-[#64FFDA] rounded-t-full h-full opacity-80 group-hover:opacity-100 transition-opacity blur-[2px]"></div>
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-[#64FFDA]/20 to-[#64FFDA] rounded-t-full h-full"></div>
+<span class="absolute -bottom-8 left-1/2 -translate-x-1/2 font-label-caps text-label-caps text-on-surface-variant">Mon</span>
+</div>
+<div class="relative w-8 bg-[#112240] rounded-t-full h-[80%] border border-white/5 group">
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-[#64FFDA]/50 to-[#64FFDA] rounded-t-full h-full opacity-80 group-hover:opacity-100 transition-opacity blur-[2px]"></div>
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-[#64FFDA]/20 to-[#64FFDA] rounded-t-full h-full"></div>
+<span class="absolute -bottom-8 left-1/2 -translate-x-1/2 font-label-caps text-label-caps text-on-surface-variant">Tue</span>
+</div>
+<div class="relative w-8 bg-[#112240] rounded-t-full h-[95%] border border-[#64FFDA]/30 group">
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-[#64FFDA]/50 to-[#64FFDA] rounded-t-full h-full opacity-100 blur-[4px]"></div>
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-[#64FFDA]/40 to-[#64FFDA] rounded-t-full h-full shadow-[0_0_15px_rgba(100,255,218,0.5)]"></div>
+<span class="absolute -bottom-8 left-1/2 -translate-x-1/2 font-label-caps text-label-caps text-secondary font-bold">Wed</span>
+</div>
+<div class="relative w-8 bg-[#112240] rounded-t-full h-[70%] border border-white/5 group">
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-[#64FFDA]/50 to-[#64FFDA] rounded-t-full h-full opacity-80 group-hover:opacity-100 transition-opacity blur-[2px]"></div>
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-[#64FFDA]/20 to-[#64FFDA] rounded-t-full h-full"></div>
+<span class="absolute -bottom-8 left-1/2 -translate-x-1/2 font-label-caps text-label-caps text-on-surface-variant">Thu</span>
+</div>
+<div class="relative w-8 bg-[#112240] rounded-t-full h-[85%] border border-white/5 group">
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-[#64FFDA]/50 to-[#64FFDA] rounded-t-full h-full opacity-80 group-hover:opacity-100 transition-opacity blur-[2px]"></div>
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-[#64FFDA]/20 to-[#64FFDA] rounded-t-full h-full"></div>
+<span class="absolute -bottom-8 left-1/2 -translate-x-1/2 font-label-caps text-label-caps text-on-surface-variant">Fri</span>
+</div>
+<div class="relative w-8 bg-[#112240] rounded-t-full h-[50%] border border-white/5 group">
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-[#64FFDA]/50 to-[#64FFDA] rounded-t-full h-full opacity-80 group-hover:opacity-100 transition-opacity blur-[2px]"></div>
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-[#64FFDA]/20 to-[#64FFDA] rounded-t-full h-full"></div>
+<span class="absolute -bottom-8 left-1/2 -translate-x-1/2 font-label-caps text-label-caps text-on-surface-variant">Sat</span>
+</div>
+<div class="relative w-8 bg-[#112240] rounded-t-full h-[90%] border border-white/5 group">
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-[#64FFDA]/50 to-[#64FFDA] rounded-t-full h-full opacity-80 group-hover:opacity-100 transition-opacity blur-[2px]"></div>
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-[#64FFDA]/20 to-[#64FFDA] rounded-t-full h-full"></div>
+<span class="absolute -bottom-8 left-1/2 -translate-x-1/2 font-label-caps text-label-caps text-on-surface-variant">Sun</span>
+</div>
+<!-- Target Line -->
+<div class="absolute top-[20%] left-0 w-full border-t border-dashed border-secondary/50 flex items-center">
+<span class="absolute -left-2 -top-6 text-xs text-secondary font-label-caps">Target (2.8L)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 bg-surface-container-lowest dark:bg-surface-container-lowest">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-desktop max-w-container-max mx-auto gap-gutter">
+<div class="font-headline-md text-headline-md text-on-surface">AQUORA</div>
+<div class="flex flex-wrap gap-8 font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Scientific Method</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact Us</a>
+</div>
+<div class="text-on-surface-variant font-body-md text-body-md mt-8 md:mt-0">© 2024 AQUORA. Precision Hydration.</div>
+</div>
+</footer>
+</body></html>
