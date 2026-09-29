@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useHydration } from '../context/HydrationContext';
-import { Layers, ChevronDown, Check, Sparkles, Home, Info, UserCheck, Calculator, CheckCircle2, Calendar, BookOpen, User, Mail } from 'lucide-react';
+import { Layers, ChevronDown, Check, Sparkles, Home, Info, UserCheck, Calculator, CheckCircle2, Calendar, BookOpen, Mail } from 'lucide-react';
 
 export default function ScreenSwitcher() {
   const { currentScreen, setCurrentScreen } = useHydration();
@@ -14,7 +14,6 @@ export default function ScreenSwitcher() {
     { id: 'result', label: 'Your Result', folder: 'aquora_your_result', icon: CheckCircle2 },
     { id: 'daily-plan', label: 'Daily Hydration Plan', folder: 'aquora_daily_plan', icon: Calendar },
     { id: 'insights', label: 'Science & Insights', folder: 'aquora_insights', icon: BookOpen },
-    { id: 'profile', label: 'User Profile & Analytics', folder: 'aquora_profile', icon: User },
     { id: 'contact', label: 'Contact Us', folder: 'aquora_contact', icon: Mail },
   ];
 
@@ -30,7 +29,7 @@ export default function ScreenSwitcher() {
               Converted Stitch Screens
             </span>
             <span className="text-[10px] text-on-surface-variant bg-white/5 px-2 py-0.5 rounded-full">
-              9 Screens
+              8 Screens
             </span>
           </div>
 

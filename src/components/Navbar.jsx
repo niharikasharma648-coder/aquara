@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useHydration } from '../context/HydrationContext';
-import { Menu, X, Droplets, User, Sparkles } from 'lucide-react';
+import { Menu, X, Droplets, Sparkles } from 'lucide-react';
 
 export default function Navbar() {
   const { currentScreen, setCurrentScreen } = useHydration();
@@ -10,7 +10,6 @@ export default function Navbar() {
     { label: 'Science', screen: 'insights' },
     { label: 'Tracking', screen: 'daily-plan' },
     { label: 'About', screen: 'about' },
-    { label: 'Community', screen: 'profile' },
     { label: 'Contact', screen: 'contact' },
   ];
 
@@ -56,19 +55,8 @@ export default function Navbar() {
           })}
         </div>
 
-        {/* Action Button & User Profile Shortcut */}
+        {/* Action Button */}
         <div className="hidden md:flex items-center gap-4">
-          <button
-            onClick={() => handleNavClick('profile')}
-            className={`p-2.5 rounded-full border transition-colors ${
-              currentScreen === 'profile'
-                ? 'border-secondary bg-secondary/10 text-secondary'
-                : 'border-white/10 text-on-surface-variant hover:text-on-surface hover:bg-white/5'
-            }`}
-            title="User Profile"
-          >
-            <User className="w-4 h-4" />
-          </button>
           <button
             onClick={() => handleNavClick('calculator')}
             className="bg-[#64FFDA] text-[#0A192F] font-bold px-6 py-2.5 rounded-full hover:shadow-[0_0_20px_rgba(100,255,218,0.5)] hover:-translate-y-[2px] transition-all duration-300 font-label-caps text-xs tracking-wider uppercase flex items-center gap-1.5"
@@ -108,13 +96,6 @@ export default function Navbar() {
                 </button>
               );
             })}
-            <button
-              onClick={() => handleNavClick('profile')}
-              className="text-left py-2.5 px-4 rounded-lg text-sm font-semibold text-on-surface-variant hover:text-on-surface hover:bg-white/5 flex items-center justify-between"
-            >
-              <span>User Profile</span>
-              <User className="w-4 h-4 text-secondary" />
-            </button>
           </div>
 
           <button

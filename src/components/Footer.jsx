@@ -41,7 +41,6 @@ export default function Footer() {
             <button onClick={() => handleNav('insights')} className="text-left text-on-surface-variant hover:text-secondary transition-colors">Science & Insights</button>
             <button onClick={() => handleNav('daily-plan')} className="text-left text-on-surface-variant hover:text-secondary transition-colors">Daily Tracking</button>
             <button onClick={() => handleNav('calculator')} className="text-left text-on-surface-variant hover:text-secondary transition-colors">Calculator</button>
-            <button onClick={() => handleNav('profile')} className="text-left text-on-surface-variant hover:text-secondary transition-colors">User Profile</button>
           </div>
 
           <div className="flex flex-col gap-2.5">

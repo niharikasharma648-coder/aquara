@@ -12,7 +12,6 @@ import HydrationCalculator from './pages/HydrationCalculator';
 import HydrationResult from './pages/HydrationResult';
 import DailyPlan from './pages/DailyPlan';
 import Insights from './pages/Insights';
-import UserProfile from './pages/UserProfile';
 import Contact from './pages/Contact';
 
 function MainRouter() {
@@ -34,8 +33,6 @@ function MainRouter() {
         return <DailyPlan />;
       case 'insights':
         return <Insights />;
-      case 'profile':
-        return <UserProfile />;
       case 'contact':
         return <Contact />;
       default:
